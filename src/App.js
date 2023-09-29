@@ -5,7 +5,7 @@ import SuccessModal from"./components/SuccessModal";
 function App() {
   return (
     <div>
-      {/* <SuccessModal /> */}
+      <SuccessModal />
     </div>
   );
 }
