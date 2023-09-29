@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
 import { OuterModalWrapper } from "./Modals";
+import { Button } from "./Button";
 import { TiTick } from "react-icons/ti";
+import { LoremIpsum } from "react-lorem-ipsum";
 
 const TickWrapper = styled.div`
   display: flex;
@@ -18,7 +20,10 @@ export default function SuccessModal() {
             <TickWrapper>
                 <TiTick color={"white"} />
             </TickWrapper>
-            <p>Text.</p>
+            <p>Congratulations your jet2 holiday booking has been confirmed</p>
+            <LoremIpsum/>
+            <Button>Cancel</Button>
+            <Button $primary>Continue</Button>
         </OuterModalWrapper>
     );
 };
