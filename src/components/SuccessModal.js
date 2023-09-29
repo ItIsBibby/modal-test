@@ -14,16 +14,28 @@ const TickWrapper = styled.div`
   border-radius: 50%;
 `;
 
+const Header = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+`
+
 export default function SuccessModal() {
     return (
         <OuterModalWrapper>
-            <TickWrapper>
-                <TiTick color={"white"} />
-            </TickWrapper>
-            <p>Congratulations your jet2 holiday booking has been confirmed</p>
-            <LoremIpsum/>
+            <Header>
+                <TickWrapper>
+                    <TiTick color={"white"} />
+                </TickWrapper>
+                <p>Congratulations your jet2 holiday booking has been confirmed</p>
+            </Header>
+            <div id="modalBody">
+                <LoremIpsum/>
+            </div>
             <Button>Cancel</Button>
             <Button $primary>Continue</Button>
+
         </OuterModalWrapper>
     );
 };
