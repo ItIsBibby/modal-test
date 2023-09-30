@@ -13,17 +13,20 @@ const TickWrapper = styled.div`
   min-width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
 `;
 
 const Header = styled.div`
     display: flex;
-    align-items: start;
+    align-content: flex-start;
+    font-size: large;
     font-weight: bold;
 `
 
 const ButtonContainer = styled.div`
     display: flex;
+    flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -32,7 +35,7 @@ const ButtonContainer = styled.div`
 const Breaker = styled.div`
     width: 100vw;
     margin: 0 -20px;
-    border-top: 2px solid ${({ theme }) => theme.colours.grey};
+    border-top: 2px solid ${({ theme }) => theme.colours.lightGrey};
 `
 
 export default function SuccessModal() {
