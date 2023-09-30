@@ -5,7 +5,7 @@ export const Button = styled.button`
     color: ${props => props.$primary ? ({ theme }) => theme.colours.white : ({ theme }) => theme.colours.blue};
     width: 150px;
     height: 50px;
-    margin: 2px;
+    margin: 5px;
     border-radius: 5px;
     font-weight: bold;
 `

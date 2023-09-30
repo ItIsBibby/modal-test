@@ -4,7 +4,7 @@ export const OuterModalWrapper = styled.div`
     background: ${({ theme }) => theme.colours.white};
     transition: ease-in-out;
     z-index: 999;
-    width: 100%;
+    width: auto;
     height: 60%;
     position: fixed;
     opacity: 1;
@@ -13,5 +13,5 @@ export const OuterModalWrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 20px;
 `;
