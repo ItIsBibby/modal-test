@@ -1,3 +1,10 @@
+# Modal test app
+
+This app consists of a success message modal. 5 different iterations of the modal can be toggled on and off with corresponding buttons.
+Once  visible the modal will resize and change layout depending on the screen size. It is mobile first, with the breakpoint between mobile and tablet/desktop screens being a width of 768px.
+Which modals are being display is determined by the useState which, once populated, is an array of id numbers corresponding to each array.
+The number of active modals is indicated by a series of dots displayed on the modal, which is intended to act as a visual representation of the queue of nodals that need to be clicked to clear the screen.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
